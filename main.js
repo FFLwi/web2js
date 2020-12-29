@@ -127,6 +127,7 @@ app.post('/update', function(request, response){
         fs.writeFile(`data/${title}`, description, 'utf8', function(err){
           response.writeHead(302, {Location: `/`});
           response.end();
+          console.log("git hub test");
         })
       });
   });
